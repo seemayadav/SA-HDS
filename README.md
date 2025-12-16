@@ -98,5 +98,31 @@ LLMs used in the abstractive phase:
 ---
 
 ## 📁 Repository Structure (Suggested)
+SA-HDS/
+│
+├── data/ # Dataset loaders and preprocessing scripts
+├── embeddings/ # Sentence embedding utilities
+├── optimizer/
+│ ├── hba.py # Honey Badger Algorithm implementation
+│ ├── pso.py # Particle Swarm Optimization (baseline)
+│ └── ga.py # Genetic Algorithm (baseline)
+│
+├── extraction/
+│ └── mo_hba_extractive.py
+│
+├── abstraction/
+│ └── llm_prompting.py
+│
+├── evaluation/
+│ ├── rouge_eval.py
+│ ├── bleu_eval.py
+│ └── bertscore_eval.py
+│
+├── configs/
+│ └── config.yaml
+│
+├── main.py
+├── requirements.txt
+└── README.md
 
 
